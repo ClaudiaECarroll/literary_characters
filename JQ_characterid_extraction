@@ -1,0 +1,3 @@
+for F in $(ls); do
+    cat $F | jq ' .characters | .[] | (.names | .[].n | select(.=="maincharactername")), .id' | grep -A 1 "maincharactername" | grep -v "maincharactername" >> character_ids_maincharactername.xlsx
+done
