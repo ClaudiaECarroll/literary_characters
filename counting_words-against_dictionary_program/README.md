@@ -1,6 +1,6 @@
 This folder contains two programs. One to count the words in a plain text file against a dictionary of words, and one to do the same by oterating through multiple files in a directory and returning the number of relevant words in each file. The programs are designed to be used with a dictionary and text contained in plain text files.
 
-**Instructions:**
+**Instructions:**\n
 To use the first program (single file), first navigate to the directory containing both the dictionary file and the text file you wish to count against. Download the python script into the same directory, and run it with the text file name as the first argument, and the dictionary file name as the second argument. 
 Example:
 $ python3 word_count_from_dictionary.py textfile.txt dictionary.txt
