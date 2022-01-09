@@ -2,14 +2,18 @@ This folder contains two programs. One to count the words in a plain text file a
 
 **Instructions:**
 
-To use the first program (single file), first navigate to the directory containing both the dictionary file and the text file you wish to count against. Download the python script into the same directory, and run it with the text file name as the first argument, and the dictionary file name as the second argument. 
+1. Single file program: word_count_from_dictionary.py
+
+To use the single file program, first navigate to the directory containing both the dictionary file and the text file you wish to count against. Download the python script into the same directory, and run it with the text file name as the first argument, and the dictionary file name as the second argument. 
 
 Example:
 $ python3 word_count_from_dictionary.py textfile.txt dictionary.txt
 
 The output should be an integer.
 
-To use the second program, iterating through files in a directory and returning an integer value for each, you will need to specify the directory address of the folder containing the files you want to iterate through. Follow the instructions, for the first program, but with the directory address for the desired folder in place of the text file name as the first argument.
+2. Multiple file program: word_count_from_dictionary_iterating.py
+
+To use the multiple file program, iterating through files in a directory and returning an integer value for each, you will need to specify the directory address of the folder containing the files you want to iterate through. Follow the instructions, for the first program, but with the directory address for the desired folder in place of the text file name as the first argument.
 
 Example:
 $ python3 word_count_from_dictionary_iterating.py ~/Documents/programming/foldername dictionary.txt
