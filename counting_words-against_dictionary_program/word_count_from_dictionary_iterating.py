@@ -34,7 +34,7 @@ for filename in os.listdir(files_path):
         for w in words:
             if not w in stop_words:
                 words_without_stops.append(w)
-                
+
 
         #lemmatize remaining tokens and print
         lemmatizer = WordNetLemmatizer()
@@ -55,5 +55,5 @@ for filename in os.listdir(files_path):
             for lemma in lemmas:
                 if lemma == element:
                     word_count = word_count + 1
-        
-        print(filename, word_count)
+
+        print(filename, len(words), word_count)
