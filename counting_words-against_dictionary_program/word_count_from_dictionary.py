@@ -53,3 +53,5 @@ for element in dictionary:
             word_count = word_count + 1
 
 print(filename, word_count)
+
+#testing
