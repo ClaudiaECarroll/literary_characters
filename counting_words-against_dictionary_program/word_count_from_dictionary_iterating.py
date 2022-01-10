@@ -55,5 +55,5 @@ for filename in os.listdir(files_path):
             for lemma in lemmas:
                 if lemma == element:
                     word_count = word_count + 1
-
-        print(word_count)
+        
+        print(filename, word_count)
