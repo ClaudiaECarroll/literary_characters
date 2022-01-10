@@ -14,7 +14,7 @@ for filename in os.listdir(files_path):
     if filename.endswith(".txt"):
 
         #accessing file for processing
-        file = open(filename, "rt")
+        file = open(os.path.join(files_path, filename), "rt")
         text = file.read()
 
         #tokenize text file
