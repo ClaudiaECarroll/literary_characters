@@ -52,4 +52,4 @@ for element in dictionary:
         if lemma == element:
             word_count = word_count + 1
 
-print(word_count)
+print(filename, word_count)
