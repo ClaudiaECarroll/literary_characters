@@ -6,4 +6,10 @@ cat pride_6.book.json | jq ' .characters | .[] | select(.mentions | .proper | .[
 
 cat pride_6.book.json | jq ' .characters | .[] | select(.mentions | .proper | .[] | .n | .=="Elizabeth") | .id'
 
-for file in 
+#iterate through .book files in working directory and apply JQ command
+
+for file in $(ls *.book); do 
+  echo "$file"
+  cat $file | jq ' .characters | .[] | select(.mentions | .proper | .[] | .n | .=="Elizabeth") | .id'
+done
+
