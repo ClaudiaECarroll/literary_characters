@@ -1,0 +1,7 @@
+#based on a proper name of a character, get their agent, possessive and modifier words associated with the character
+
+cat pride_6.book.json | jq ' .characters | .[] | select(.mentions | .proper | .[] | .n | .=="Elizabeth") | (.agent | .[] | .w), (.poss | .[] | .w), (.mod | .[] | .w)'
+
+#based on the proper name of a character, get their character id
+
+cat pride_6.book.json | jq ' .characters | .[] | select(.mentions | .proper | .[] | .n | .=="Elizabeth") | .id'
