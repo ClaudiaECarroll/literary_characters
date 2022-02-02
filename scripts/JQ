@@ -5,3 +5,5 @@ cat pride_6.book.json | jq ' .characters | .[] | select(.mentions | .proper | .[
 #based on the proper name of a character, get their character id
 
 cat pride_6.book.json | jq ' .characters | .[] | select(.mentions | .proper | .[] | .n | .=="Elizabeth") | .id'
+
+for file in 
